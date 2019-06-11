@@ -1,3 +1,7 @@
 #Ignore my virtual environment
 venv/
+*.pyc
+.DS_Store
+.env
+
 
