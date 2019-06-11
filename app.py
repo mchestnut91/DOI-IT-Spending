@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import functions as fn
@@ -15,7 +16,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server=app.server
 
 #Read data in
-data = pd.read_csv('/fixtures/data.csv')
+data = pd.read_csv('fixtures/data.csv')
 
 #Get list of bureaus
 bureaus = pd.unique(data['Bureau Name']).tolist()
